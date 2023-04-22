@@ -1,0 +1,423 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 400;
+}
+@media (min-width:600px){
+    .black-header-line{
+        width: 100%;
+        background-color: black;
+        color: white;
+        padding: 10px 80px 10px 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .phone-line{
+        display: flex;
+    }
+    .logo-translate{
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .triple-logo{
+        width: 110px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .translator{
+        font-size: 14px;
+    }
+    .header-btn{
+      background: transparent; outline: none;
+      position: relative;
+      border: 2px solid #F0BE1B;
+      padding: 15px 50px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+    .tuda{
+      color: yellow;
+    }
+    .near-map{
+      padding-top: 30px;
+    }
+    .header-btn:hover:before{
+      opacity: 1; 
+      transform: translate(0,0);
+      cursor: pointer;
+      margin-top: 3px;
+    }
+    .header-btn:before{
+      content: attr(data-hover);
+      position: absolute;
+      top: 1.1em; left: 0;
+      width: 100%;
+      color: yellow;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: .8em;
+      opacity: 0;
+      transform: translate(-100%,0);
+      transition: all .3s ease-in-out;
+      cursor: pointer;
+    }
+    .header-btn:hover div{
+      opacity: 0; 
+      transform: translate(100%,0);
+      cursor: pointer;
+    }
+    .header-btn div{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+        font-size: .8em;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+      }
+    .white-header-line{
+        width: 100%;
+        background-color:white;
+        padding: 16px 80px 16px 80px;
+    }
+    .lightgreen-header-line{
+        width: 100%;
+        height: 550px;
+        background-color:white;
+        padding: 60px 50px 50px 75px;
+        background: #76AF87;
+        display: flex;
+        justify-content: center;
+    }
+    .unite-text{
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .green-title-unite{
+        color:#224F41;
+        font-size: 22px;
+        font-weight: 700;
+    }
+      .we-ukrainian{
+        height: 690px;
+        padding-top: 55px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .who-are-we{
+        font-weight: 700;
+        font-size: 34px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .kherson-explanaition{
+        width: 1040px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .three-reasons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .reason-block{
+        width:600px;
+        height: 143px;
+        background-color: #F5F5F5;
+      }
+      .footer-black-line{
+        width: 100%;
+        height: 60px;
+        background-color: #0D0D0D;
+        margin-top: 60px;
+      }
+      .safe-ukraine-title {
+        text-align: center;
+      }
+      .reason-block{
+        padding: 35px 25px 35px 25px;
+      }
+      .reason-text{
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .y-text{
+        color: #F0BE1B;
+      }
+      .we-want{
+        height: 300px;
+        width: 100%;
+        background-color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        padding-top: 20px;
+        padding-bottom: 50px;
+      }
+      .title-want{
+        font-weight: bold;
+        font-size: 34px;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      .text-want{
+        font-size: 22px;
+        text-align: center;
+      }
+      .help-defenders{
+        height: 470px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .middle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .safe-ukraine-title{
+        font-weight: bold;
+        margin-top: 75px;
+      }
+      .help-box{
+        width: 500px;
+        height: 160px;
+        background: #F5F5F5;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 30px;
+      }
+      .title-defenders{
+        font-size:34px;
+        font-weight: bold;
+        margin-bottom: 45px;
+        margin-top: 100px;
+        text-align: center;
+      }
+      .four-help-blocks{
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 160px 160px;
+        gap: 20px;
+      }
+      .y-title-defenders{
+        font-weight: bold;
+        color: #F0BE1B;
+        font-size: 28px;
+      }
+      .b-text-defenders{
+        font-size: 18px;
+      }
+      .footer-text {
+          text-align: center;
+      }
+      .joke{
+          text-align: center;
+          font-weight: bold;
+      }
+      .footer-form{
+        padding-top: 75px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 730px;
+        display: grid;
+        grid-template-columns: 330px 330px;
+        grid-template-rows: 80px 80px 80px 50px 50px; 
+        gap: 20px;
+      }
+      .end{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 75px;
+      }
+      .just-text{
+        height: 300px;
+        width: 100%;
+        background-color: #F5F5F5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .h1{
+        font-size: 150px;
+        color: rgba(255,255,255,.2);
+        background-image: url('https://physicsworld.com/wp-content/uploads/2022/03/Ukraine-flag-soldier-shadows-2109144263-Shutterstock_Tomas-Ragina.jpg');
+        background-size: 270px;
+        background-repeat: repeat-x;
+        -webkit-background-clip: text;
+        animation: animate 50s linear infinite;
+      }
+      .same-width{
+        width: 330px;
+        height: 45px;
+        padding: 10px;
+        font-size: 20px;
+        background-color: white;
+        font-weight: bold;
+        outline: 5px solid blue;
+        border: 5px solid yellow;
+        border-radius: 5px;
+        color: blue;
+      }
+
+      .input-head{
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .big-width{
+        width: 680px;
+        height: 100px;
+        padding: 10px;
+        font-size: 20px;
+        background-color: white;
+        font-weight: bold;
+        outline: 5px solid blue;
+        border: 5px solid yellow;
+        border-radius: 5px;
+        color: blue;
+      }
+      .big-input-baza{
+        grid-row:3/4 ;
+      }
+      .urban{
+        grid-row: 4/5;
+        background-color: white;
+        font-weight: bold;
+        outline: 5px solid blue;
+        border: 5px solid yellow;
+        border-radius: 5px;
+        color: blue;
+        width: 680px;
+        height: 40px;
+      }
+      .select-baza{
+        grid-row: 5/6;
+      }
+      @keyframes animate {
+        0% {
+          background-position: right 0px top 0px;
+        }
+      }
+      .big-hero{
+        height: 450px;
+        width:100%;
+      }
+      .title-hero{
+        text-align: center;
+        font-weight: bold;
+        font-size: 34px;
+        margin-top: 70px;
+        margin-bottom: 25px;
+      }
+      .hero{
+        width: 870px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .kolba{
+        width: 510px;
+        height: 250px;
+        background-color: #F5F5F5;
+        padding: 20px;
+      }
+      .big-hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .header-btn2{
+        background: transparent; outline: none;
+        position: relative;
+        border: 2px solid #F0BE1B;
+        padding: 15px 50px;
+        overflow: hidden;
+        margin-top: -20px;
+        background: blue;
+      }
+      .header-btn2:hover:before{
+        opacity: 1; 
+        transform: translate(0,0);
+        cursor: pointer;
+        margin-top: 3px;
+      }
+      .header-btn2:before{
+        content: attr(data-hover);
+        position: absolute;
+        top: 1.1em; left: 0;
+        width: 100%;
+        color: yellow;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+        font-size: .8em;
+        opacity: 0;
+        transform: translate(-100%,0);
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+      }
+      .header-btn2:hover div{
+        opacity: 0; 
+        transform: translate(100%,0);
+        cursor: pointer;
+      }
+      .header-btn2 div{
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-weight: 800;
+          font-size: .8em;
+          transition: all .3s ease-in-out;
+          cursor: pointer;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
